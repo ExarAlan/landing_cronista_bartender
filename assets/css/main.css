@@ -1,0 +1,213 @@
+.bodyBartender {
+     margin: 0;
+ }
+
+ .fontBartender {
+     font-family: "DM Serif Display", serif;
+     position: relative;
+     background-color: #F7EDE2;
+     color: #700000;  
+ }
+
+ .fontBartender h1,
+ .fontBartender h2,
+ .fontBartender h3,
+ .fontBartender p {
+     margin: 0;
+     font-weight: normal;
+ }
+
+.heroBartender {
+    min-height: calc(100vh - 80px);
+    border-top: 2px solid #700000;
+    display: flex;
+    align-items: center;       
+    justify-content: space-between;          
+}
+
+.heroContentBartender {
+    flex: 1;
+}
+
+.heroSvgBartender {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40vw;   
+}
+
+.heroSvgBartender svg {
+    width: 100%;
+    height: auto;
+}
+
+.heroTitleBartender {
+    padding-left: 6.9792vw;
+    padding-top: 15.3646vw;
+    padding-right: 3vw;
+    font-size: max(47px, 2.4479vw);
+}
+
+.heroSubtitleBartender {
+    padding: 2.7083vw 3vw 16.3021vw 6.9792vw;
+    font-size: max(1.3021vw, 1.3021vw);
+}
+
+
+ .cocktailDerechaBartender{
+    border-top: 2px solid #700000 ;
+    display: flex;
+    padding-bottom: 8.3854vw;
+    padding-left: 7.0313vw;
+    padding-top: 7.1354vw;
+    padding-right: 1.4063vw;
+ }
+
+ .cocktailDerechaContenidoBartender{
+    padding-right: 8.5417vw;
+ }
+
+.cocktailDerechaTitleBartender{
+    font-size: max(60px, 3.125vw); 
+}
+
+.cocktailDerechaSubtitleBartender{
+    font-size: max(28px, 1.4583vw);
+    padding-top: 1.6667vw;
+}
+
+.cocktailImagenSubtitleBartender{
+    padding-top: 4.1667vw;
+}
+
+.cocktailImagenContenidoBartender{
+    box-shadow: 8px 8px 0 #700000;
+    border: 1.5px solid #700000;
+}
+.cocktailImagenContainerBartender{
+    display: flex;
+    padding-top: 3.1771vw;
+}
+.cocktailImagenContainerBartender p {
+    padding-left: .9896vw;
+    padding-top: 10.6771vw;
+    font-size: max(60px, 3.125vw);
+}
+
+.cocktailImagenContainerBartender span {
+    padding-left: .9896vw;
+    padding-top: 9.4271vw;
+    font-size: max(30px, 1.5625vw);
+}
+
+.cocktailIzquierdaBartender{
+    padding-left: 4.1667vw;
+    padding-top: 7.1354vw;
+    padding-right: 9.8438vw;
+    padding-bottom: 10vw;
+    border-top: 2px solid #700000 ;
+    display: flex;
+}
+
+.cocktailIzquierdaContenidoBartender{
+    padding-left: 3.1771vw;
+}
+
+.cocktailIzquierdaSubtituloBartender{
+    font-size: max(28px, 1.4583vw);
+}
+
+.cocktailIzquierdaImagenContainer{
+    padding-top: 5.4167vw;
+}
+
+.cocktailDerechaSinTituloBartender{
+    padding-bottom: 10.2604vw;
+ }
+.cocktailDerechaImagenContainerSinTituloBartender{
+     display: flex;
+     padding-top: 5.5729vw;
+     padding-bottom: 5.1042vw;
+}
+
+.videoBartenderSection{
+    border-top: 2px solid #700000 ;
+    padding-top: 5.4167vw;
+    padding-left: 19.0625vw;
+    padding-bottom: 9.0104vw;
+}
+
+.cocktailIzquierdaDosBartender{
+    padding-right: 5.1042vw;
+    padding-bottom: 10.2604vw;
+}
+
+.cocktailIzquierdaDosContenidoBartender{
+padding-left: 2.9167vw;
+}
+.cocktailIzquierdaDosImagenContainer{
+    padding-top: 3.9063vw;
+}
+
+.cocktailIzquierdaDosImagen{
+    padding-top: 12.4479vw;
+    padding-bottom: 7.7604vw;
+}
+
+.cocktailDerechaSinTituloDosBartender{
+    padding-bottom: 11.3021vw;
+    padding-top: 4.5833vw;
+}
+
+.cocktailImagenContainerDosBartender{
+    padding-top: 4.5313vw;
+}
+
+.cocktailDerechaSubtitleDosBartender{
+    padding-top: 2.5521vw;
+}
+
+.cocktailIzquierdaTresBartender{
+    padding-bottom: 8.3854vw;
+}
+.cocktailIzquierdaTresImagenContainer{
+    padding-top: 3.0729vw;
+}
+
+.cocktailIzquierdaTresImagen{
+    padding-bottom: 7.2917vw;
+    padding-top: 14.0625vw;
+}
+
+.cocktailDerechaDosBartender{
+    padding-bottom: 15.7813vw;
+    padding-top: 6.875vw;
+}
+.cocktailImagenDosContainerBartender{
+    padding-top: 6.875vw;
+}
+.cocktailImagenDerechaDosBartender{
+    padding-top: 13.2292vw;
+    padding-bottom: 14.6875vw;
+}
+.comoInscribirseBartender{
+    background-color: #700000;
+    color: white;
+    text-align: center;
+}
+
+.comoInscribirseContainer{
+    padding-top: 3.4896vw;
+    padding-bottom: 3.3333vw;
+    padding-left: 15.8333vw;
+    padding-right: 15.8333vw;
+}
+.comoInscribirseContainer p{
+    font-size: max(50px, 2.6042vw);
+}
+
+.comoInscribirseContainer span{
+    font-size: max(34px, 1.7708vw);
+    padding-top: 1.4583vw;
+}
