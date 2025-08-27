@@ -1,28 +1,59 @@
 .bodyBartender {
-     margin: 0;
- }
+    margin: 0;
+}
 
- .fontBartender {
-     font-family: "DM Serif Display", serif;
-     position: relative;
-     background-color: #F7EDE2;
-     color: #700000;  
- }
+.translateBottom {
+    opacity: 0;
+    transition: transform 2s, opacity 0.1s;
+    transform: translateY(calc(10vh + 100%));
+}
 
- .fontBartender h1,
- .fontBartender h2,
- .fontBartender h3,
- .fontBartender p {
-     margin: 0;
-     font-weight: normal;
- }
+.translateTop {
+    opacity: 0;
+    transition: transform 1s, opacity 2s;
+    transform: translateY(-50px);
+}
+
+.translateLeft {
+    opacity: 0;
+    transition: transform 1s, opacity 0.4s;
+    transform: translateX(min(-8.8541666666666666666666666666667vw, -100px));
+}
+
+.translateRight {
+    opacity: 0;
+    transition: transform 1s, opacity 0.4s;
+    transform: translateX(max(8.8541666666666666666666666666667vw, 100px));
+    ;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0) translateX(0) scale(1, 1);
+}
+
+.fontBartender {
+    font-family: "DM Serif Display", serif;
+    position: relative;
+    background-color: #F7EDE2;
+    color: #700000;
+    overflow: hidden;
+}
+
+.fontBartender h1,
+.fontBartender h2,
+.fontBartender h3,
+.fontBartender p {
+    margin: 0;
+    font-weight: normal;
+}
 
 .heroBartender {
-    min-height: calc(100vh - 80px);
+    height: calc(100vh - 80px);
     border-top: 2px solid #700000;
     display: flex;
-    align-items: center;       
-    justify-content: space-between;          
+    align-items: center;
+    justify-content: space-between;
 }
 
 .heroContentBartender {
@@ -34,7 +65,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 40vw;   
+    max-width: 40vw;
 }
 
 .heroSvgBartender svg {
@@ -45,7 +76,7 @@
 .heroTitleBartender {
     padding-left: 6.9792vw;
     padding-top: 15.3646vw;
-    padding-right: 3vw;
+    padding-right: 9vw;
     font-size: max(47px, 2.4479vw);
 }
 
@@ -54,160 +85,792 @@
     font-size: max(1.3021vw, 1.3021vw);
 }
 
+.videoBartender {
+    width: 60.833333333333333333333333333333vw;
+    height: 40.520833333333333333333333333333vw;
+}
 
- .cocktailDerechaBartender{
-    border-top: 2px solid #700000 ;
+.imagenBartender {
+    width: 26.150520833333333333333333333333vw;
+    /*height: 17.409895833333333333333333333333vw;
+    aspect-ratio: 136∶55;*/
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+.cocktailDerechaBartender {
+    border-top: 2px solid #700000;
     display: flex;
     padding-bottom: 8.3854vw;
     padding-left: 7.0313vw;
     padding-top: 7.1354vw;
     padding-right: 1.4063vw;
- }
-
- .cocktailDerechaContenidoBartender{
-    padding-right: 8.5417vw;
- }
-
-.cocktailDerechaTitleBartender{
-    font-size: max(60px, 3.125vw); 
 }
 
-.cocktailDerechaSubtitleBartender{
-    font-size: max(28px, 1.4583vw);
+.cocktailDerechaContenidoBartender {
+    padding-right: 8.5417vw;
+    width: 38.020833333333333333333333333333vw;
+}
+
+.cocktailDerechaTitleBartender {
+    font-size: max(34px, 3.125vw);
+}
+
+.cocktailDerechaSubtitleBartender {
+    font-size: max(16px, 1.4583vw);
     padding-top: 1.6667vw;
 }
 
-.cocktailImagenSubtitleBartender{
+.cocktailImagenSubtitleBartender {
     padding-top: 4.1667vw;
 }
 
-.cocktailImagenContenidoBartender{
+.cocktailImagenContenidoBartender {
     box-shadow: 8px 8px 0 #700000;
     border: 1.5px solid #700000;
 }
-.cocktailImagenContainerBartender{
+
+.cocktailImagenContainerBartender {
     display: flex;
     padding-top: 3.1771vw;
 }
+
 .cocktailImagenContainerBartender p {
     padding-left: .9896vw;
     padding-top: 10.6771vw;
-    font-size: max(60px, 3.125vw);
+    font-size: max(34px, 3.125vw);
 }
 
 .cocktailImagenContainerBartender span {
     padding-left: .9896vw;
     padding-top: 9.4271vw;
-    font-size: max(30px, 1.5625vw);
+    font-size: max(18px, 1.5625vw);
 }
 
-.cocktailIzquierdaBartender{
+.cocktailIzquierdaBartender {
     padding-left: 4.1667vw;
     padding-top: 7.1354vw;
     padding-right: 9.8438vw;
     padding-bottom: 10vw;
-    border-top: 2px solid #700000 ;
+    border-top: 2px solid #700000;
     display: flex;
+    justify-content: end;
 }
 
-.cocktailIzquierdaContenidoBartender{
+.cocktailIzquierdaContenidoBartender {
     padding-left: 3.1771vw;
+    width: 38.020833333333333333333333333333vw;
 }
 
-.cocktailIzquierdaSubtituloBartender{
-    font-size: max(28px, 1.4583vw);
+.cocktailIzquierdaSubtituloBartender {
+    font-size: max(16px, 1.4583vw);
 }
 
-.cocktailIzquierdaImagenContainer{
+.cocktailIzquierdaImagenContainer {
     padding-top: 5.4167vw;
 }
 
-.cocktailDerechaSinTituloBartender{
+.cocktailDerechaSinTituloBartender {
     padding-bottom: 10.2604vw;
- }
-.cocktailDerechaImagenContainerSinTituloBartender{
-     display: flex;
-     padding-top: 5.5729vw;
-     padding-bottom: 5.1042vw;
 }
 
-.videoBartenderSection{
-    border-top: 2px solid #700000 ;
+.cocktailDerechaImagenContainerSinTituloBartender {
+    display: flex;
+    padding-top: 5.5729vw;
+    padding-bottom: 5.1042vw;
+}
+
+.videoBartenderSection {
+    border-top: 2px solid #700000;
     padding-top: 5.4167vw;
     padding-left: 19.0625vw;
     padding-bottom: 9.0104vw;
 }
 
-.cocktailIzquierdaDosBartender{
+.cocktailIzquierdaDosBartender {
     padding-right: 5.1042vw;
     padding-bottom: 10.2604vw;
 }
 
-.cocktailIzquierdaDosContenidoBartender{
-padding-left: 2.9167vw;
+.cocktailIzquierdaDosContenidoBartender {
+    padding-left: 2.9167vw;
+    width: 42.8125vw;
 }
-.cocktailIzquierdaDosImagenContainer{
+
+.cocktailIzquierdaDosImagenContainer {
     padding-top: 3.9063vw;
 }
 
-.cocktailIzquierdaDosImagen{
+.cocktailIzquierdaDosImagen {
     padding-top: 12.4479vw;
     padding-bottom: 7.7604vw;
 }
 
-.cocktailDerechaSinTituloDosBartender{
+.cocktailDerechaSinTituloDosBartender {
     padding-bottom: 11.3021vw;
     padding-top: 4.5833vw;
 }
 
-.cocktailImagenContainerDosBartender{
+.cocktailImagenContainerDosBartender {
     padding-top: 4.5313vw;
 }
 
-.cocktailDerechaSubtitleDosBartender{
+.cocktailDerechaSubtitleDosBartender {
     padding-top: 2.5521vw;
 }
 
-.cocktailIzquierdaTresBartender{
+.cocktailIzquierdaTresBartender {
     padding-bottom: 8.3854vw;
 }
-.cocktailIzquierdaTresImagenContainer{
+
+.cocktailIzquierdaTresImagenContainer {
     padding-top: 3.0729vw;
 }
 
-.cocktailIzquierdaTresImagen{
+.cocktailIzquierdaTresImagen {
     padding-bottom: 7.2917vw;
     padding-top: 14.0625vw;
 }
 
-.cocktailDerechaDosBartender{
+.cocktailDerechaDosBartender {
     padding-bottom: 15.7813vw;
     padding-top: 6.875vw;
 }
-.cocktailImagenDosContainerBartender{
+
+.cocktailImagenDosContainerBartender {
     padding-top: 6.875vw;
 }
-.cocktailImagenDerechaDosBartender{
+
+.cocktailImagenDerechaDosBartender {
     padding-top: 13.2292vw;
     padding-bottom: 14.6875vw;
 }
-.comoInscribirseBartender{
+
+.comoInscribirseBartender {
     background-color: #700000;
     color: white;
     text-align: center;
+    padding-bottom: max(30px, 3.3333vw);
 }
 
-.comoInscribirseContainer{
-    padding-top: 3.4896vw;
+.comoInscribirseContainer {
+    padding-top: max(34px,3.4896vw);
     padding-bottom: 3.3333vw;
     padding-left: 15.8333vw;
     padding-right: 15.8333vw;
 }
-.comoInscribirseContainer p{
-    font-size: max(50px, 2.6042vw);
+
+.comoInscribirseContainer p {
+    font-size: max(34px, 2.6042vw);
+
+    padding-bottom: max(16px,1.4583vw);
 }
 
-.comoInscribirseContainer span{
-    font-size: max(34px, 1.7708vw);
-    padding-top: 1.4583vw;
+.comoInscribirseContainer span {
+    font-size: max(18px, 1.7708vw);
+}
+
+
+.vasoBartender {
+    position: absolute;
+    top: calc(100vh - 80px + 10vw);
+    right: 30px;
+    width: 43.727083333333333333333333333333vw;
+    transform: translate(0, 0);
+    transition: transform 0.03s linear;
+    z-index: 10;
+}
+
+.vasoBartender2 {
+    top: calc(100vh - 80px + 226.5625vw);
+    left: 60px;
+    right: auto;
+}
+
+.containerAnimation {
+    position: relative;
+    width: 40vw;
+    overflow: hidden;
+    height: 70vh;
+}
+
+.containerBartender {
+    width: 1100px;
+    height: 811px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.containerTragos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    --beer: #674d06;
+    --beer-glass: #e29121;
+    --beer-foam: #f9e1b6;
+    --beer-bubble: #e29121;
+    --beer-glass-detail: #e2c165;
+    --cocktail1: #ee3636;
+    --cocktail2: #c61414;
+    --cocktail3: #b50505;
+    --cocktail-glass: #ffd4bf;
+    --straw: #ffffff;
+    --straw-stripe: #0d5ec6;
+    --whisky-glass: #a1c1c1;
+    --whisky: #b56a06;
+    --ice: #9ef6ff;
+}
+
+#beer,
+#cocktail2,
+#whisky {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+#glass2 {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--beer);
+    border-radius: 0.2em 0.2em 2em 2em;
+    border-style: solid;
+    border-color: var(--beer-glass);
+    border-width: 0.6em 0.5em 1.1em 0.5em;
+
+    .foam.drip {
+        animation-name: beerDrip;
+        animation-fill-mode: forwards;
+
+        &:nth-child(1) {
+            top: -0.8em;
+            left: -1em;
+            width: 0.7em;
+            height: 0em;
+            border-radius: 0.6em;
+            animation-duration: 10s;
+        }
+
+        &:nth-child(2) {
+            top: 0.4em;
+            left: 0.5em;
+            width: 1.2em;
+            height: 0em;
+            border-radius: 0.6em;
+            animation-duration: 7s;
+        }
+    }
+
+    .foam {
+        background-color: var(--beer-foam);
+        position: absolute;
+        border-radius: 50%;
+        z-index: 1;
+
+        &:nth-child(1) {
+            top: -1.8em;
+            left: -1em;
+            width: 3em;
+            height: 3em;
+        }
+
+        &:nth-child(2) {
+            top: -2em;
+            left: 1.4em;
+            width: 3.7em;
+            height: 3.7em;
+        }
+
+        &:nth-child(3) {
+            top: -1.8em;
+            left: 4.4em;
+            width: 3em;
+            height: 3em;
+
+            &:after {
+                content: "";
+                display: block;
+            }
+        }
+
+        &:nth-child(4) {
+            top: -2.7em;
+            width: 3em;
+            height: 3em;
+        }
+    }
+
+    .bubble {
+        position: absolute;
+        border-radius: 50%;
+        background-color: var(--beer-bubble);
+        animation-name: beerBubble;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        opacity: 0;
+        transform: translateY(0em);
+        top: 6.6em;
+
+        &:nth-child(1) {
+            animation-duration: 1s;
+            left: 4em;
+            width: 0.4em;
+            height: 0.4em;
+        }
+
+        &:nth-child(2) {
+            animation-duration: 1.2s;
+            left: 2em;
+            width: 0.5em;
+            height: 0.5em;
+        }
+
+        &:nth-child(3) {
+            animation-duration: 1.4s;
+            left: 3.2em;
+            width: 0.5em;
+            height: 0.5em;
+        }
+
+        &:nth-child(4) {
+            animation-duration: 0.8s;
+            left: 5.1em;
+            width: 0.3em;
+            height: 0.3em;
+        }
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        width: 1.4em;
+        height: 4em;
+        background-color: transparent;
+        border: 0.7em solid #e29121;
+        border-radius: 0 1.3em 1.3em 0;
+        position: absolute;
+        top: 12%;
+        left: 100%;
+    }
+}
+
+#details {
+    .glassEffect {
+        position: absolute;
+        background-color: var(--beer-glass-detail);
+
+        &:nth-child(1) {
+            width: 0.4em;
+            height: 1.1em;
+            top: 5.9em;
+            left: 8.4em;
+            border-radius: 0.6em;
+        }
+
+        &:nth-child(2) {
+            width: 0.4em;
+            height: 3.2em;
+            top: 7.4em;
+            left: 8.4em;
+            border-radius: 0.6em;
+        }
+    }
+}
+
+@keyframes beerDrip {
+    0% {
+        height: 0em;
+    }
+
+    100% {
+        height: 5em;
+    }
+}
+
+@keyframes beerBubble {
+    0% {
+        transform: translateY(0em);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-6.5em);
+        opacity: 1;
+    }
+}
+
+#cocktailglass {
+    position: absolute;
+    width: 5.5em;
+    height: 11em;
+    bottom: -5px;
+    left: 50%;
+    transform: translate3d(-50%, -0.2em, 0em) perspective(20em) rotateX(45deg);
+    border-style: solid;
+    border-color: var(--cocktail-glass);
+    border-width: 0.2em 0.2em 0.8em 0.2em;
+    border-radius: 0.1em 0.1em 3em 3em;
+    background: linear-gradient(180deg,
+            transparent 0%,
+            transparent 30%,
+            var(--cocktail1) 30%,
+            var(--cocktail1) 50%,
+            var(--cocktail2) 50%,
+            var(--cocktail2) 80%,
+            var(--cocktail3) 80%,
+            var(--cocktail3) 100%);
+    box-shadow: 0em 0em 0.1em var(--cocktail-glass);
+    opacity: 0.9;
+}
+
+#glassfoot {
+    position: absolute;
+    bottom: 0;
+    transform: translate3d(-50%, 0em, 0em);
+    background-color: var(--cocktail-glass);
+    width: 3em;
+    height: 0.5em;
+    left: 50%;
+    border-radius: 1em 1em 0em 0em;
+}
+
+#straw {
+    position: absolute;
+    top: 0;
+    transform: rotate(-15deg);
+    background-color: var(--straw);
+    width: 0.4em;
+    height: 11em;
+    left: 40%;
+
+    &:before,
+    &:after {
+        display: block;
+        content: "";
+        height: 100%;
+        width: 0.1em;
+        background-color: var(--straw-stripe);
+        position: absolute;
+        top: 0;
+    }
+
+    &:before {
+        left: 0.03em;
+    }
+
+    &:after {
+        left: 0.24em;
+    }
+}
+
+#cocktailbubble {
+    div {
+        position: absolute;
+        background-color: var(--cocktail1);
+        width: 0.2em;
+        height: 0.2em;
+        border-radius: 50%;
+        bottom: 7.3em;
+        animation-name: cocktailbubble;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        &:nth-child(1) {
+            left: 4.3em;
+            animation-duration: 0.28s;
+        }
+
+        &:nth-child(2) {
+            left: 4.9em;
+            animation-duration: 0.32s;
+        }
+
+        &:nth-child(3) {
+            left: 5.3em;
+            animation-duration: 0.4s;
+        }
+
+        &:nth-child(4) {
+            left: 6.6em;
+            animation-duration: 0.37s;
+        }
+
+        &:nth-child(5) {
+            left: 7em;
+            animation-duration: 0.28s;
+        }
+
+        &:nth-child(6) {
+            left: 8em;
+            animation-duration: 0.35s;
+        }
+
+        &:nth-child(7) {
+            left: 6em;
+            animation-duration: 0.25s;
+        }
+
+        &:nth-child(8) {
+            left: 6.3em;
+            animation-duration: 0.38s;
+        }
+    }
+}
+
+#cocktaildetail {
+    div {
+        position: absolute;
+        left: 8.5em;
+        width: 0.2em;
+        background-color: var(--cocktail-glass);
+        border-radius: 3em;
+        transform: rotate(-8deg);
+
+        &:nth-child(1) {
+            height: 0.6em;
+            bottom: 8em;
+            left: 8.2em;
+        }
+
+        &:nth-child(2) {
+            height: 4.3em;
+            bottom: 3.4em;
+            left: 8.6em;
+        }
+    }
+}
+
+@keyframes cocktailbubble {
+    0% {
+        bottom: 7.3em;
+        opacity: 0.8;
+    }
+
+    100% {
+        bottom: 8.3em;
+        opacity: 0;
+    }
+}
+
+#whiskyglass {
+    position: absolute;
+    width: 7em;
+    height: 6.3em;
+    bottom: 0.5em;
+    left: 50%;
+    transform: translate3d(-50%, 0em, 0em);
+    border-color: var(--whisky-glass);
+    border-style: solid;
+    border-width: 0.2em 0.3em 1em 0.3em;
+    border-radius: 0em 0em 1.9em 1.9em;
+    z-index: 1;
+}
+
+#whiskycontent {
+    position: absolute;
+    width: 7.2em;
+    height: 3em;
+    bottom: 1.2em;
+    left: 50%;
+    transform: translate3d(-50%, 0em, 0em);
+    background-color: var(--whisky);
+    z-index: 0;
+    border-radius: 0 0 1em 1em;
+}
+
+.ice {
+    position: absolute;
+    border-radius: 0.3em;
+    background-color: var(--ice);
+    opacity: 0.5;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+    &:nth-child(1) {
+        animation-name: ice1;
+        animation-duration: 8s;
+        top: 0em;
+        left: 0em;
+        width: 2.5em;
+        height: 2.5em;
+        transform: translate3d(0.6em, -0.7em, 0em) rotate(19deg);
+    }
+
+    &:nth-child(2) {
+        animation-name: ice2;
+        animation-duration: 7s;
+        top: 0em;
+        left: 0em;
+        width: 1.8em;
+        height: 1.8em;
+        transform: translate3d(3.1em, -0.4em, 0em) rotate(-29deg);
+    }
+}
+
+@keyframes ice1 {
+    0% {
+        transform: translate3d(0.6em, -0.7em, 0em) rotate(19deg);
+    }
+
+    100% {
+        transform: translate3d(0.75em, -1em, 0em) rotate(37deg);
+    }
+}
+
+@keyframes ice2 {
+    0% {
+        transform: translate3d(3.1em, -0.4em, 0em) rotate(-29deg);
+    }
+
+    100% {
+        transform: translate3d(2.8em, 0em, 0em) rotate(-50deg);
+    }
+}
+
+@keyframes OMGmelt {
+    0% {}
+
+    100% {}
+}
+
+@media (max-width: 1120px) and (min-width: 851px) {
+    .cocktailDerechaBartender {
+        height: 571px;
+        padding-top: 0;
+        padding-bottom: 0;
+        align-items: center;
+    }
+
+    .containerBartener2,
+    .containerBloodyMary,
+    .containerFormacion {
+        padding-top: 0;
+        padding-bottom: 0;
+        align-items: center;
+        height: 800px;
+    }
+
+    .containerFormacion {
+        height: 860px;
+    }
+
+    .containerBloodyMary {
+        height: 400px;
+    }
+
+    .containerBloodyMary p {
+        padding-top: 0;
+    }
+
+    .contImagenAdriano {
+        flex-direction: column-reverse;
+    }
+
+    .contImagenAdriano span {
+        padding-left: 0;
+        padding-bottom: 32px;
+        padding-top: 0;
+    }
+
+    .cocktailImagenSubtitleBartender {
+        padding-top: 42px;
+    }
+
+    .vasoBartender {
+        top: calc(100vh - 80px + 103px);
+        /* width: 433px;*/
+    }
+
+    .vasoBartender2 {
+        top: calc(100vh - 80px + 2330px) !important;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .cocktailIzquierdaDosContenidoBartender,
+    .cocktailDerechaContenidoBartender,
+    .cocktailIzquierdaContenidoBartender {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .cocktailDerechaBartender,
+    .cocktailIzquierdaBartender {
+        padding-right: 7.0313vw;
+        padding-left: 7.0313vw;
+    }
+
+    .imagenBartender {
+        width: 50%;
+    }
+
+    .cocktailImagenContainerBartender p {
+        padding-left: 32px;
+        padding-top: 16px;
+        font-size: 30px;
+    }
+
+    .cocktailImagenContainerBartender span {
+        padding-left: 32px;
+        padding-top: 16px;
+        font-size: 24px;
+    }
+
+    .cocktailIzquierdaTresImagenContainer {
+        padding-top: 40px
+    }
+
+    .videoBartenderSection {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .videoBartender {
+        width: 80vw;
+        height: 53.287671232876712328767123287671vw;
+    }
+
+    .vasoBartender {
+        display: none;
+    }
+}
+@media (max-width: 650px) {
+ #beer{
+    display: none;
+ }
+}
+
+@media (max-width: 550px) {
+    .imagenBartender {
+        width: 100%;
+    }
+
+    .cocktailImagenContainerBartender {
+        flex-direction: column-reverse;
+    }
+
+    .cocktailImagenContainerBartender p,
+    .cocktailImagenContainerBartender span {
+        padding-left: 0;
+        padding-bottom: 32px;
+    }
+}
+@media (max-width: 420px) {
+ #cocktail2{
+    display: none;
+ }
+ #whisky{
+    height: 150px;
+ }
 }
